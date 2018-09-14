@@ -1,2 +1,3 @@
-﻿  main.cpp
-LINK : fatal error LNK1168: cannot open \\vdi-shares.net.ualr.edu\UEMProfiles\clsmith12\Documents\GitHub\CPSC2382_Group_Project_BinDecHexConversions\CPSC2382.GroupC.Project01\Debug\CPSC2382.GroupC.Project01.exe for writing
+﻿  functions.cpp
+c:\users\cwagk\source\repos\assembly1\cpsc2382_group_project_bindechexconversions\cpsc2382.groupc.project01\functions.cpp(12): warning C4101: 'i': unreferenced local variable
+  CPSC2382.GroupC.Project01.vcxproj -> C:\Users\cwagk\source\repos\assembly1\CPSC2382_Group_Project_BinDecHexConversions\CPSC2382.GroupC.Project01\Debug\CPSC2382.GroupC.Project01.exe

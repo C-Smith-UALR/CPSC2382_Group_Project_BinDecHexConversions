@@ -1,2 +1,2 @@
-#TargetFrameworkVersion=v4.0:PlatformToolSet=v140:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=8.1
-Debug|Win32|\\vdi-shares.net.ualr.edu\UEMProfiles\clsmith12\Documents\GitHub\CPSC2382_Group_Project_BinDecHexConversions\CPSC2382.GroupC.Project01\|
+#TargetFrameworkVersion=v4.0:PlatformToolSet=v141:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native32Bit:WindowsTargetPlatformVersion=10.0.16299.0
+Debug|Win32|C:\Users\cwagk\source\repos\assembly1\CPSC2382_Group_Project_BinDecHexConversions\CPSC2382.GroupC.Project01\|
