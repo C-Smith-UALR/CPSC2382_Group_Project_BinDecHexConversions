@@ -1,12 +1,14 @@
 #include <iostream>
 #include "functions.h"
 #include <vector>
+#include <string>
 
 
 using std::cout;
 using std::cin;
 using std::vector;
 using std::endl;
+using std::string;
 
 void convertDecToBin() {
 	int userValue, temp, i, valueSave;
@@ -133,9 +135,25 @@ void convertBinToHex() {
 
 }
 
-void convertHexToDec() {
+void convertHexToDec() 
+{
+	string userHexString;
+	cout << "Enter number in hexadecimal (enter letters in UPPER CASE): \n";
+	cin >> userHexString;
 
-	//FIXME:  code here for converting Hexadecimal to Decimal
+	long myResult=0;
+	for (int i = 0; i < userHexString.length(); i++) {
+		if (userHexString[i] <= 57 && userHexString[i] >= 48) {
+			myResult += (userHexString[i] - 48)*pow(16, userHexString.length() - i - 1);
+		}
+		else if (userHexString[i] >= 65 && userHexString[i] <= 70) {
+			myResult += (userHexString[i] - 55)*pow(16, userHexString.length() - i - 1);
+		}
+	}
+
+	cout << userHexString << " in base 10 is " << myResult << "\n";
+	system("PAUSE");
+	
 }
 void convertHexToBin() {
 	//FIXME:  code here for converting Hexadecimal to Binary

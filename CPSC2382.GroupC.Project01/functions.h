@@ -14,7 +14,7 @@ void convertDecToBin();         //function declarations
 void convertDecToHex();
 void convertBinToDec();
 void convertBinToHex();
-void convertHexToDec();
+void convertHexToDec(); //clark
 void convertHexToBin();
 
 
