@@ -127,7 +127,23 @@ void convertDecToHex() {
 
 void convertBinToDec() {
 
-	//FIXME:  code here for converting Binary to Decimal
+	string binary = "";
+	cout << "Enter value in binary: " << endl;			//get binary input as a string
+	cin >> binary;
+
+	int length = binary.length();					//get length of string
+	int sum = 0;
+
+	for (int i = 1; i <= length; ++i) {
+		if (binary.at(length - i) == '1') {			//evaluate string at each location starting at furthest to the right
+			int temp = pow(2, i - 1);				//if string is 1 calculate power i - 1 then add to sum to get decimal value
+			sum += temp;
+		}
+	}
+
+	cout << binary << " in binary is " << sum << " in base 10." << endl;		//cout sum of decimal value
+	system("pause");
+	system("cls");
 }
 
 void convertBinToHex() {

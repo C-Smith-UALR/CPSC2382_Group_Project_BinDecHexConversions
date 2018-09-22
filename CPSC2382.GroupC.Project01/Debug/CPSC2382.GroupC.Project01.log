@@ -1,3 +1,7 @@
 ﻿  functions.cpp
-c:\users\cwagk\source\repos\assembly1\cpsc2382_group_project_bindechexconversions\cpsc2382.groupc.project01\functions.cpp(12): warning C4101: 'i': unreferenced local variable
+c:\users\cwagk\source\repos\assembly1\cpsc2382_group_project_bindechexconversions\cpsc2382.groupc.project01\functions.cpp(14): warning C4101: 'i': unreferenced local variable
+c:\users\cwagk\source\repos\assembly1\cpsc2382_group_project_bindechexconversions\cpsc2382.groupc.project01\functions.cpp(139): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\cwagk\source\repos\assembly1\cpsc2382_group_project_bindechexconversions\cpsc2382.groupc.project01\functions.cpp(161): warning C4018: '<': signed/unsigned mismatch
+c:\users\cwagk\source\repos\assembly1\cpsc2382_group_project_bindechexconversions\cpsc2382.groupc.project01\functions.cpp(163): warning C4244: '+=': conversion from 'double' to 'long', possible loss of data
+c:\users\cwagk\source\repos\assembly1\cpsc2382_group_project_bindechexconversions\cpsc2382.groupc.project01\functions.cpp(166): warning C4244: '+=': conversion from 'double' to 'long', possible loss of data
   CPSC2382.GroupC.Project01.vcxproj -> C:\Users\cwagk\source\repos\assembly1\CPSC2382_Group_Project_BinDecHexConversions\CPSC2382.GroupC.Project01\Debug\CPSC2382.GroupC.Project01.exe

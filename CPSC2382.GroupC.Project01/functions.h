@@ -10,10 +10,10 @@ using std::vector;
 using std::endl;
 
 int getUserInput();
-void convertDecToBin();         //function declarations 
-void convertDecToHex();
-void convertBinToDec();
-void convertBinToHex();
+void convertDecToBin();         //clark
+void convertDecToHex();		//caroline
+void convertBinToDec();		//caroline
+void convertBinToHex();	
 void convertHexToDec(); //clark
 void convertHexToBin();
 
