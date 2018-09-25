@@ -8,22 +8,12 @@ using std::cout;
 using std::cin;
 using std::vector;
 using std::endl;
+using std::string;
 
-int getUserInput();
-void convertDecToBin();         //clark
-void convertDecToHex();		//caroline
-void convertBinToDec();		//caroline
-void convertBinToHex();	
-void convertHexToDec(); //clark
-void convertHexToBin();
-
-
-
-
-
-
-
-
+string convertDecToBin(int);         //clark
+string convertDecToHex(int);		//caroline
+int convertBinToDec(string);		//caroline
+int convertHexToDec(string);		//clark
 
 #endif
 

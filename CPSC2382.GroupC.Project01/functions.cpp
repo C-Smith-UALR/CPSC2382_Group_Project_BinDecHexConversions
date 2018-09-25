@@ -10,14 +10,8 @@ using std::vector;
 using std::endl;
 using std::string;
 
-void convertDecToBin() {
-	int userValue, temp, i, valueSave;
-
-
-	cout << "Enter the value in base: \n";
-	cin >> userValue;
-
-	valueSave = userValue;
+string convertDecToBin(int userValue) {
+	int temp;
 
 	std::vector<int>v;				//vector for storing the 1's and 0's of binary
 	while (userValue > 0) {
@@ -28,26 +22,16 @@ void convertDecToBin() {
 
 	std::vector<int>::reverse_iterator it;   //reverse iterator so that the digits are printed in reverse
 
-	cout << valueSave << " in base 10 is equal to ";
-
+	string binaryVal = "";
 	for (it = v.rbegin(); it != v.rend(); ++it) {
-		cout << *it;							//dereferencing the iterator prints 1 or 0;
+		binaryVal += std::to_string(*it);							//dereference and convert int to string to store
 	}
-
-	cout << " in base 2.\n\n\n";
-
-	system("PAUSE");
-
+	return binaryVal;
 }
 
-void convertDecToHex() {
-		int userVal, temp, saveVal;
+string convertDecToHex(int userVal) {
+		int temp;
 		char myChar;
-
-		cout << "Enter the value in base:  " << endl;
-		cin >> userVal;
-
-		saveVal = userVal;
 
 		std::vector<char>decToHex;
 		while (userVal > 0) {
@@ -105,31 +89,19 @@ void convertDecToHex() {
 				break;
 
 			}
-
 			decToHex.push_back(myChar);				//store char literal in vector
 			userVal /= 16;
 		}
 
 		std::vector<char>::reverse_iterator it;				//reverse iterator to print in reverse
-		cout << saveVal << " in base 10 is equal to ";
-
+		string hexVal = "";
 		for (it = decToHex.rbegin(); it != decToHex.rend(); it++) {
-			cout << *it;									//dereference iterator prints out char literal
-		}
-		cout << " in hexadecimal" << endl;
-
-
-		system("pause");
-		system("cls");
-		
+			hexVal += *it;									//dereference iterator and store in hexVal
+		}	
+		return hexVal;
 	}
 
-
-void convertBinToDec() {
-
-	string binary = "";
-	cout << "Enter value in binary: " << endl;			//get binary input as a string
-	cin >> binary;
+int convertBinToDec(string binary) {
 
 	int length = binary.length();					//get length of string
 	int sum = 0;
@@ -139,24 +111,12 @@ void convertBinToDec() {
 			int temp = pow(2, i - 1);				//if string is 1 calculate power i - 1 then add to sum to get decimal value
 			sum += temp;
 		}
-	}
-
-	cout << binary << " in binary is " << sum << " in base 10." << endl;		//cout sum of decimal value
-	system("pause");
-	system("cls");
+	}	
+	return sum;
 }
 
-void convertBinToHex() {
-	//FIXME:  code here for converting Binary to Hexadecimal
-
-}
-
-void convertHexToDec() 
+int convertHexToDec(string userHexString) 
 {
-	string userHexString;
-	cout << "Enter number in hexadecimal (enter letters in UPPER CASE): \n";
-	cin >> userHexString;
-
 	long myResult=0;
 	for (int i = 0; i < userHexString.length(); i++) {
 		if (userHexString[i] <= 57 && userHexString[i] >= 48) {
@@ -166,12 +126,5 @@ void convertHexToDec()
 			myResult += (userHexString[i] - 55)*pow(16, userHexString.length() - i - 1);
 		}
 	}
-
-	cout << userHexString << " in base 10 is " << myResult << "\n";
-	system("PAUSE");
-	
-}
-void convertHexToBin() {
-	//FIXME:  code here for converting Hexadecimal to Binary
-
+	return myResult;	
 }
